@@ -11,7 +11,7 @@
          <p class="text-faded">It's How You Know What's in Your Contract</p>
       </q-card-title>
       <div>
-      <q-checkbox class="col-2" v-model="checked"/>
+      <q-checkbox class="col-2" v-model="check1" checked-icon unchecked-icon/>
       </div>
       </q-card-main>
       <q-card-separator/>
@@ -29,7 +29,7 @@
          <p class="text-faded">Secure Portal for End to End Transactions</p>
       </q-card-title>
       <div>
-      <q-checkbox class="col-2" v-model="checked"/>
+      <q-checkbox class="col-2" v-model="check1"/>
       </div>
       </q-card-main>
       <q-card-separator/>
@@ -47,7 +47,7 @@
          <p class="text-faded">Connected Contracting</p>
       </q-card-title>
       <div>
-      <q-checkbox class="col-2" v-model="checked"/>
+      <q-checkbox class="col-2" v-model="check1"/>
       </div>
       </q-card-main>
       <q-card-separator/>
@@ -64,6 +64,10 @@
 
 <script>
 export default {
-  name: 'PageIndex'
+  data () {
+    return {
+      check1: false
+    }
+  }
 }
 </script>
