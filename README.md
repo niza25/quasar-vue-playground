@@ -1,3 +1,3 @@
-# Quasar App
+# My first Quasar App
 
-> WIP
+## A small playground to practice Vue.js and Quasar
