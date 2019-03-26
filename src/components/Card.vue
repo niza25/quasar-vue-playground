@@ -1,23 +1,25 @@
 <template>
-  <q-card inline style="width: 500px">
-    <q-card-main class="flex row items-center" style="height: 150px">
-      <!-- <q-card-media class="col-3">
-        <img src={{card.logo}} style="height: 100%">
-      </q-card-media> -->
-      <q-card-title class="col-8">
-       {{card.title}}
-        <p class="text-faded">{{card.subtitle}}</p>
-      </q-card-title>
+  <q-card>
+    <q-list>
+      <q-item>
+      <q-item-side>
+        <q-item-tile color="primary">
+          <!-- <img href="{{card.logo}}"/> -->
+        </q-item-tile>
+      </q-item-side>
+      <q-item-main>
+        <q-item-tile label>{{card.title}}</q-item-tile>
+        <q-item-tile sublabel>{{card.subtitle}}</q-item-tile>
+      </q-item-main>
+    </q-item>
       <div>
         <q-checkbox class="col-1" />
       </div>
-    </q-card-main>
     <q-card-separator/>
-    <q-card-main style="height: 200px">
-      <big
-        class="text-right"
-      >{{card.description}}</big>
+    <q-card-main>
+      <big>{{card.description}}</big>
     </q-card-main>
+    </q-list>
   </q-card>
 </template>
 
