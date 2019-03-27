@@ -9,7 +9,7 @@
             <q-item-tile sublabel class="text-faded q-title">{{card.subtitle}}</q-item-tile>
           </q-item-main>
           <div class='q-mx-md'>
-            <q-checkbox v-model="card.checked" v-on:change="toggleCheckbox"/>
+            <q-checkbox v-model="card.checked" style="zoom: 1.3"/>
           </div>
         </q-item>
         <q-card-separator/>
@@ -19,25 +19,20 @@
   </q-card>
 </template>
 
-<style>
+<style scoped>
 h6{
   text-align: left;
   font-weight: normal;
   margin-top: 0;
 }
 img{
-  height: 80px;
+  height: 90px;
 }
 </style>
 
 <script>
 export default {
   name: 'Card',
-  props: ['card'],
-  methods: {
-    toggleCheckbox () {
-      this.card.checked = !this.card.checked
-    }
-  }
+  props: ['card']
 }
 </script>

@@ -12,10 +12,6 @@ export default {
   props: ['cardsData'],
   components: {
     Card
-  },
-  data () {
-    return {
-    }
   }
 }
 </script>

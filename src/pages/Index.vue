@@ -15,6 +15,7 @@ text-align: left;
 import Cards from '../components/Cards'
 
 export default {
+  name: 'MainPage',
   components: {
     Cards
   },
@@ -24,7 +25,7 @@ export default {
         {
           id: 1,
           title: 'Kira',
-          subtitle: 'It is How You Know What is in Your Contract',
+          subtitle: 'It\'s How You Know What\'s in Your Contract',
           description: 'Kira is a powerful machine learning software that identifies, extracts, and analyzes text in your contracts and other documents.',
           logo: 'https://i.ibb.co/FVSvfVn/logoKira.png',
           checked: false
