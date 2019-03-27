@@ -33,7 +33,7 @@ export default {
           id: 2,
           title: 'Doxly',
           subtitle: 'Secure Portal for End to End Transactions',
-          description: 'Doxly’s secure transaction management platform brings control, peace of mind, and velocity to legal transactions.',
+          description: 'Manage the entire legal transaction process from diligence to cosing.',
           logo: 'https://i.ibb.co/qsCxjDw/logo-Doxly.png',
           checked: false
         },
