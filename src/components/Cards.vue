@@ -1,6 +1,6 @@
 <template>
   <div class='row justify-between'>
-    <Card v-for='card in cardsData' v-bind:key=card.id v-bind:card='card' />
+    <Card v-for='card in cardsData' :key=card.id :card='card' />
   </div>
 </template>
 

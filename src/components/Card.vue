@@ -1,10 +1,43 @@
 <template>
-  <q-card inline style="max-width: 520px">
-    <q-list>
+<q-card inline class="q-ma-sm">
+      <q-card-media>
+        <img :src="card.logo">
+      </q-card-media>
+      <q-list>
+        <q-item>
+          <q-item-side>
+            <q-item-tile color="primary" icon="local bar" />
+          </q-item-side>
+          <q-item-main>
+            <q-item-tile label>Bar XYZ</q-item-tile>
+            <q-item-tile sublabel>Have a drink.</q-item-tile>
+          </q-item-main>
+        </q-item>
+        <q-item>
+          <q-item-side>
+            <q-item-tile color="red" icon="local gas station" />
+          </q-item-side>
+          <q-item-main>
+            <q-item-tile label>Gas Station</q-item-tile>
+            <q-item-tile sublabel>Fill your gas tank.</q-item-tile>
+          </q-item-main>
+        </q-item>
+        <q-item>
+          <q-item-side>
+            <q-item-tile color="amber" icon="local movies" />
+          </q-item-side>
+          <q-item-main>
+            <q-item-tile label>Cinema XYZ</q-item-tile>
+            <q-item-tile sublabel>Watch a movie.</q-item-tile>
+          </q-item-main>
+        </q-item>
+      </q-list>
+    </q-card>
+  <!-- <q-card inline style="max-width: 530px">
       <q-item>
       <q-item-side>
         <q-item-tile color="primary">
-          <img :src="card.logo"/>
+          <img src={{card.logo}}/>
         </q-item-tile>
       </q-item-side>
       <q-item-main>
@@ -12,15 +45,14 @@
         <q-item-tile sublabel>{{card.subtitle}}</q-item-tile>
       </q-item-main>
     </q-item>
-      <div>
+      <q-item>
         <q-checkbox class="col-1" v-on:change="toggleCheckbox"/>
-      </div>
+      </q-item>
     <q-card-separator/>
     <q-card-main>
-      <big class='text-left'>{{card.description}}</big>
+      <h6 class='text-left'>{{card.description}}</h6>
     </q-card-main>
-    </q-list>
-  </q-card>
+  </q-card> -->
 </template>
 
 <style scoped>
