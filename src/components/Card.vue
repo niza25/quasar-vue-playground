@@ -1,10 +1,8 @@
 <template>
   <q-card inline style="max-width: 530px">
       <q-item>
-      <q-item-side>
-        <img :src="card.logo" style="width: 70px">
-      </q-item-side>
-       <q-item-main class="col">
+        <img :src="card.logo">
+       <q-item-main>
         <q-item-tile label>{{card.title}}</q-item-tile>
         <q-item-tile sublabel class="text-faded">{{card.subtitle}}</q-item-tile>
       </q-item-main>
@@ -12,10 +10,19 @@
       </q-item>
        <q-card-separator/>
     <q-card-main>
-      <h6 class='text-left'>{{card.description}}</h6>
+      <h6>{{card.description}}</h6>
     </q-card-main>
   </q-card>
 </template>
+
+<style>
+h6{
+  text-align: left;
+}
+img{
+  width: 70px;
+}
+</style>
 
 <script>
 export default {

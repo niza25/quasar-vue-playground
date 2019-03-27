@@ -56,6 +56,7 @@ module.exports = function (ctx) {
         'QItem',
         'QItemMain',
         'QItemSide',
+        'QItemTile',
         'QCard',
         'QCheckbox',
         'QCardTitle',
