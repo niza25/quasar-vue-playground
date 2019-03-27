@@ -1,5 +1,5 @@
 <template>
-  <q-page>
+  <q-page class="q-mx-lg">
     <h3>Featured</h3>
     <Cards v-bind:cardsData='cardsData' />
   </q-page>

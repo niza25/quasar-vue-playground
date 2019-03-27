@@ -1,8 +1,7 @@
 <template>
-  <div class='row justify-around'>
-    <Card v-for='card in cardsData' v-bind:key=card.id class='col-4' v-bind:card='card'>
-    </Card>
-    </div>
+  <div class='row justify-between'>
+    <Card v-for='card in cardsData' v-bind:key=card.id v-bind:card='card' />
+  </div>
 </template>
 
 <script>

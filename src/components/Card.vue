@@ -1,10 +1,10 @@
 <template>
-  <q-card>
+  <q-card inline style="max-width: 520px">
     <q-list>
       <q-item>
       <q-item-side>
         <q-item-tile color="primary">
-          <!-- <img href="{{card.logo}}"/> -->
+          <img :src="card.logo"/>
         </q-item-tile>
       </q-item-side>
       <q-item-main>
@@ -17,7 +17,7 @@
       </div>
     <q-card-separator/>
     <q-card-main>
-      <big>{{card.description}}</big>
+      <big class='text-left'>{{card.description}}</big>
     </q-card-main>
     </q-list>
   </q-card>
@@ -32,7 +32,7 @@ export default {
   props: ['card'],
   methods: {
     toggleCheckbox () {
-      console.log('toggle checkbox')
+      this.card.checked = !this.card.checked
     }
   }
 }
