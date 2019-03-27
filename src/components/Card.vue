@@ -13,7 +13,7 @@
       </q-item-main>
     </q-item>
       <div>
-        <q-checkbox class="col-1" />
+        <q-checkbox class="col-1" v-on:change="toggleCheckbox"/>
       </div>
     <q-card-separator/>
     <q-card-main>
@@ -29,6 +29,11 @@
 <script>
 export default {
   name: 'Card',
-  props: ['card']
+  props: ['card'],
+  methods: {
+    toggleCheckbox () {
+      console.log('toggle checkbox')
+    }
+  }
 }
 </script>
