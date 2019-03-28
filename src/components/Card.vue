@@ -6,7 +6,7 @@
           </q-item-side>
           <q-item-main>
             <q-item-tile label class="q-headline">{{card.title}}</q-item-tile>
-            <q-item-tile sublabel class="text-faded q-title">{{card.subtitle}}</q-item-tile>
+            <q-item-tile sublabel class="text-faded q-title text-weight-regular">{{card.subtitle}}</q-item-tile>
           </q-item-main>
           <div class='q-mx-md'>
             <q-checkbox v-model="card.checked" style="zoom: 1.3"/>
@@ -27,6 +27,7 @@ h6{
 }
 img{
   height: 90px;
+  width: 90px;
 }
 </style>
 
