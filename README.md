@@ -5,4 +5,10 @@
 
 - **Created with Quasar CLI for best developer experience(https://quasar-framework.org/guide/)**
 
-- **:point_right:[Quasar usage](./src/pages/Index.vue)**
+
+- **:point_right:[Main page](./src/pages/Index.vue)**
+
+- **:point_right:[Quasar usage](./src/components/Card.vue)**
+
+- **:point_right:[Vue component and passing props](./src/components/Cards.vue)**
+
